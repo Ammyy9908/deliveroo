@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9426c5-cb93-424f-8fb5-fb7f60a085cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deliveroo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CategoryCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/DishRow.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/FeaturedRow.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ResturantCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/ResturantScreen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +55,7 @@
       <workItem from="1671466987506" duration="7329000" />
       <workItem from="1671559366884" duration="1088000" />
       <workItem from="1671756125887" duration="5145000" />
-      <workItem from="1671855026105" duration="981000" />
+      <workItem from="1671855026105" duration="1064000" />
     </task>
     <servers />
   </component>
