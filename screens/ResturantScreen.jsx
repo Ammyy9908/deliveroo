@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import {
   View,
   Text,
@@ -19,9 +19,11 @@ import {
 } from "react-native-heroicons/mini";
 import DishRow from "../components/DishRow";
 import BasketIndicator from "../components/BasketIndicator";
-
+import { useDispatch } from "react-redux";
+import { setRestaurant } from "../features/restaurantSlice";
 const ResturantScreen = () => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
 
   const {
     params: {
@@ -39,13 +41,45 @@ const ResturantScreen = () => {
       dishes,
     },
   } = useRoute();
-
-  console.log`dishes: ${dishes}`;
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false,
     });
   }, []);
+
+  console.log("ResturantScreen -> resturant", {
+    id,
+    imgUrl,
+    title,
+    rating,
+    price,
+    time,
+    shortDescription,
+    genre,
+    address,
+    long,
+    lat,
+    dishes,
+  });
+
+  useEffect(() => {
+    dispatch(
+      setRestaurant({
+        id,
+        imgUrl,
+        title,
+        rating,
+        price,
+        time,
+        shortDescription,
+        genre,
+        address,
+        long,
+        lat,
+        dishes,
+      })
+    );
+  }, [dispatch]);
 
   return (
     <>

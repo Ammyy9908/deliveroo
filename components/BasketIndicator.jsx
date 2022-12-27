@@ -8,9 +8,15 @@ const BasketIndicator = () => {
   const items = useSelector(selectBasket);
   const navigation = useNavigation();
   const basketTotal = useSelector(selectBasketTotals);
+  if (items.length === 0) return null;
   return (
     <View className="absolute bottom-10 z-10 w-full">
-      <TouchableOpacity className="bg-[#00CCBB] mx-5 p-4 rounded-lg flex-row space-x-1 items-center">
+      <TouchableOpacity
+        className="bg-[#00CCBB] mx-5 p-4 rounded-lg flex-row space-x-1 items-center"
+        onPress={() => {
+          navigation.navigate("Basket");
+        }}
+      >
         <Text className="text-white font-extrabold text-lg bg-[#01a296] py-1 px-2 rounded-md">
           {items.length}
         </Text>

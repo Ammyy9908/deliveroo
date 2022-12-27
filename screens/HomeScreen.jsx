@@ -36,7 +36,6 @@ const HomeScreen = () => {
         }`
       )
       .then((data) => {
-        console.log(data);
         setFeatured(data);
       })
       .catch((err) => {
